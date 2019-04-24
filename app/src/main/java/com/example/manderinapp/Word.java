@@ -4,11 +4,13 @@ public class Word
 {
 
     String mDefaultTranslation, mMandrinTranslation;
+    int images;
 
-    public Word(String mDefaultTranslation, String mMandrinTranslation)
+    public Word(String mDefaultTranslation, String mMandrinTranslation, int images)
     {
         this.mDefaultTranslation = mDefaultTranslation;
         this.mMandrinTranslation = mMandrinTranslation;
+        this.images=images
     }
 
     public String getmDefaultTranslation()
@@ -19,5 +21,10 @@ public class Word
     public String getmMandrinTranslation()
     {
         return mMandrinTranslation;
+    }
+    
+    public int getImages()
+    {
+        return images;
     }
 }
