@@ -21,16 +21,16 @@ public class Numbers extends AppCompatActivity
         setContentView(R.layout.activity_numbers);
         numberList=new ArrayList<>();
 
-        numberList.add(new Word("one","yi"));
-        numberList.add(new Word("two","èr"));
-        numberList.add(new Word("three","san"));
-        numberList.add(new Word("four","sì"));
-        numberList.add(new Word("five","wu"));
-        numberList.add(new Word("six","liù"));
-        numberList.add(new Word("seven","qi"));
-        numberList.add(new Word("eight","ba"));
-        numberList.add(new Word("nine","jiu"));
-        numberList.add(new Word("ten","shí"));
+        numberList.add(new Word(R.drawable.one,"one","yi"));
+        numberList.add(new Word(R.drawable.two,"two","èr"));
+        numberList.add(new Word(R.drawable.three,"three","san"));
+        numberList.add(new Word(R.drawable.four,"four","sì"));
+        numberList.add(new Word(R.drawable.five,"five","wu"));
+        numberList.add(new Word(R.drawable.six,"six","liù"));
+        numberList.add(new Word(R.drawable.seven,"seven","qi"));
+        numberList.add(new Word(R.drawable.eight,"eight","ba"));
+        numberList.add(new Word(R.drawable.nine,"nine","jiu"));
+        numberList.add(new Word(R.drawable.ten,"ten","shí"));
 
         numListView=findViewById(R.id.numbersLists);
         WordAdapter wrdAdapt=new WordAdapter(this,numberList,R.color.greyback);
