@@ -28,8 +28,11 @@ public class WordAdapter extends ArrayAdapter<Word>
         Word currentWord=getItem(position);
         TextView defaultTrans=root.findViewById(R.id.default_lang);
         TextView manderinTrans=root.findViewById(R.id.manderin_lang);
+        ImageView imgTrans=root.findViewById(R.id.img1);
+        
         defaultTrans.setText(currentWord.getmDefaultTranslation());
         manderinTrans.setText(currentWord.getmMandrinTranslation());
+        imgTrans.setImageResource(currentWord.getImages());
 
         View viewContainer = root.findViewById(R.id.container);
         int colour= ContextCompat.getColor(getContext(),color);
