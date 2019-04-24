@@ -19,15 +19,15 @@ public class FamilyMembers extends AppCompatActivity
         setContentView(R.layout.activity_family_members);
         familyList=new ArrayList<>();
 
-        familyList.add(new Word("Father","父亲"));
-        familyList.add(new Word("Mother","妈妈"));
-        familyList.add(new Word("Son","儿子"));
-        familyList.add(new Word("Daughter","女儿"));
-        familyList.add(new Word("Younger brother","弟弟"));
-        familyList.add(new Word("Younger sister","妹妹"));
-        familyList.add(new Word("Grandmother","姥姥"));
-        familyList.add(new Word("Grandfather","爷爷"));
-        familyList.add(new Word("Elder brother","哥哥"));
+        familyList.add(new Word(R.drawable.father,"Father","父亲"));
+        familyList.add(new Word(R.drawable.mother,"Mother","妈妈"));
+        familyList.add(new Word(R.drawable.son,"Son","儿子"));
+        familyList.add(new Word(R.drawable.daughter,"Daughter","女儿"));
+        familyList.add(new Word(R.drawable.brother,"Younger brother","弟弟"));
+        familyList.add(new Word(R.drawable.sister,"Younger sister","妹妹"));
+        familyList.add(new Word(R.drawable.grandmother,"Grandmother","姥姥"));
+        familyList.add(new Word(R.drawable.grandfather,"Grandfather","爷爷"));
+        familyList.add(new Word(R.drawable.elderbrother,"Elder brother","哥哥"));
 
         familyListView=findViewById(R.id.familiesLists);
         WordAdapter wrdAdapt=new WordAdapter(this,familyList,R.color.redback);
