@@ -19,16 +19,13 @@ public class Colors extends AppCompatActivity
         setContentView(R.layout.activity_colors);
         colorList=new ArrayList<>();
 
-        colorList.add(new Word("Red","红色-Hóngsè"    ));
-        colorList.add(new Word("Green","绿色-Lǜsè"    ));
-        colorList.add(new Word("Blue","蓝色-Lán sè"   ));
-        colorList.add(new Word("Brown","棕色-Zōngsè"  ));
-        colorList.add(new Word("Grey","灰色-Huīsè"    ));
-        colorList.add(new Word("Black","黑色-Hēisè"   ));
-        colorList.add(new Word("White","白色-Báisè"   ));
-        colorList.add(new Word("Yellow","黄色-Huángsè"));
-        colorList.add(new Word("Pink","粉-Fěng"       ));
-        colorList.add(new Word("Orange","橙子-Chéngzi"));
+        colorList.add(new Word(R.drawable.color_red,"Red","红色-Hóngsè"    ));
+        colorList.add(new Word(R.drawable.color_green,"Green","绿色-Lǜsè"    ));
+        colorList.add(new Word(R.drawable.color_brown,"Brown","棕色-Zōngsè"  ));
+        colorList.add(new Word(R.drawable.color_gray,"Grey","灰色-Huīsè"    ));
+        colorList.add(new Word(R.drawable.color_black,"Black","黑色-Hēisè"   ));
+        colorList.add(new Word(R.drawable.color_white,"White","白色-Báisè"   ));
+        colorList.add(new Word(R.drawable.color_mustard_yellow,"Yellow","黄色-Huángsè"));
 
         colorListView=findViewById(R.id.colorsLists);
         WordAdapter wrdAdapt=new WordAdapter(this,colorList,R.color.greenback);
