@@ -12,6 +12,12 @@ public class Word
         this.mMandrinTranslation = mMandrinTranslation;
         this.images=images
     }
+    
+    public Word(String mDefaultTranslation, String mMandrinTranslation)
+    {
+        this.mDefaultTranslation = mDefaultTranslation;
+        this.mMandrinTranslation = mMandrinTranslation;
+    }
 
     public String getmDefaultTranslation()
     {
